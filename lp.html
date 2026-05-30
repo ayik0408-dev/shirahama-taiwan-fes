@@ -1,805 +1,1047 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>白浜×台湾フェス 2026</title>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500&family=Shippori+Mincho:wght@400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
-<style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>白浜×台湾フェス 2026</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500&family=Shippori+Mincho:wght@400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+    rel="stylesheet">
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-  :root {
-    --red: #8b2e2e;
-    --red-light: #b04040;
-    --cream: #faf5ee;
-    --cream-dark: #f0e8d8;
-    --brown: #3a2a1a;
-    --brown-light: #6a5a4a;
-    --gold: #c89410;
-    --gold-light: #e8b84022;
-    --font-min: 'Shippori Mincho', serif;
-    --font-noto: 'Noto Serif JP', serif;
-    --font-en: 'Cormorant Garamond', serif;
-  }
+    :root {
+      --red: #8b2e2e;
+      --red-light: #b04040;
+      --cream: #faf5ee;
+      --cream-dark: #f0e8d8;
+      --brown: #3a2a1a;
+      --brown-light: #6a5a4a;
+      --gold: #c89410;
+      --gold-light: #e8b84022;
+      --font-min: 'Shippori Mincho', serif;
+      --font-noto: 'Noto Serif JP', serif;
+      --font-en: 'Cormorant Garamond', serif;
+    }
 
-  html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
 
-  body {
-    background: var(--cream);
-    color: var(--brown);
-    font-family: var(--font-noto);
-    line-height: 1.8;
-    overflow-x: hidden;
-  }
+    body {
+      background: var(--cream);
+      color: var(--brown);
+      font-family: var(--font-noto);
+      line-height: 1.8;
+      overflow-x: hidden;
+    }
 
-  /* ── NAV ── */
-  nav {
-    position: fixed;
-    top: 0; left: 0; right: 0;
-    z-index: 100;
-    background: var(--red);
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    padding: 10px 1rem;
-  }
-  nav a {
-    color: #faf0e0cc;
-    text-decoration: none;
-    font-family: var(--font-noto);
-    font-size: 12px;
-    letter-spacing: 0.15em;
-    transition: color 0.2s;
-  }
-  nav a:hover { color: #fff; }
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: var(--red);
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
+      padding: 12px 1rem;
+    }
 
-  /* ── HERO ── */
-  .hero {
-    position: relative;
-    min-height: 30vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    overflow: hidden;
-    padding-top: 40px;
-  }
+    nav a {
+      color: #faf0e0cc;
+      text-decoration: none;
+      font-family: var(--font-noto);
+      font-size: 13px;
+      letter-spacing: 0.1em;
+      transition: color 0.2s;
+      white-space: nowrap;
+    }
 
-  .hero-img {
-    position: absolute;
-    inset: 0;
-    background: url('とp.jpg') center/cover no-repeat;
-    filter: brightness(0.75) saturate(0.85);
-  }
+    nav a:hover {
+      color: #fff;
+    }
 
-  .hero-grad {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-      to bottom,
-      #1a0a0888 0%,
-      transparent 35%,
-      transparent 55%,
-      #0d0502cc 100%
-    );
-  }
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      min-height: 30vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      overflow: hidden;
+      padding-top: 40px;
+    }
 
- .hero-top {
-    position: absolute;
-    top: 56px;
-    left: 0; right: 0;
-    text-align: center;
-    padding: 0 1rem;
-    max-width: 100%;
-  }
+    .hero-img {
+      position: absolute;
+      inset: 0;
+      background: url('top.jpg') center/cover no-repeat;
+      filter: brightness(0.75) saturate(0.85);
+    }
 
-  .hero-band {
-    display: inline-block;
-    background: var(--red);
-    color: #faf0e0;
-    font-family: var(--font-noto);
-    font-size: 12px;
-    letter-spacing: 0.5em;
-    padding: 6px 24px;
-    margin-bottom: 16px;
-  }
+    .hero-grad {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom,
+          #1a0a0888 0%,
+          transparent 35%,
+          transparent 55%,
+          #0d0502cc 100%);
+    }
 
-  .hero-en {
-    font-family: var(--font-en);
-    font-size: clamp(10px, 1.8vw, 13px);
-    letter-spacing: 0.3em;
-    color: #faf0e0aa;
-    margin-bottom: 10px;
-  }
+    .hero-top {
+      position: absolute;
+      top: 56px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      padding: 0 1rem;
+      max-width: 100%;
+    }
 
-  .hero-title {
-    font-family: var(--font-min);
-    font-size: clamp(36px, 9vw, 80px);
-    font-weight: 400;
-    color: #faf5ee;
-    letter-spacing: 0.05em;
-    line-height: 1.1;
-    text-shadow: 0 2px 20px #00000055;
-  }
-  .hero-title .accent { color: #e07070; }
+    .hero-en {
+      font-family: var(--font-en);
+      font-size: clamp(10px, 1.8vw, 13px);
+      letter-spacing: 0.3em;
+      color: #faf0e0aa;
+      margin-bottom: 10px;
+    }
 
-  .hero-sub {
-    font-family: var(--font-noto);
-    font-weight: 300;
-    font-size: clamp(12px, 2vw, 15px);
-    letter-spacing: 0.25em;
-    color: #faf0e0bb;
-    margin-top: 10px;
-  }
+    .hero-title {
+      font-family: var(--font-min);
+      font-size: clamp(32px, 9vw, 80px);
+      font-weight: 400;
+      color: #faf5ee;
+      letter-spacing: 0.05em;
+      line-height: 1.1;
+      text-shadow: 0 2px 20px #00000055;
+    }
 
- .hero-bottom {
-    position: relative;
-    z-index: 2;
-    padding: 10rem 1.5rem 3rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
+    .hero-title .accent {
+      color: #e07070;
+    }
 
- .hero-date {
-    font-family: var(--font-noto);
-    font-size: clamp(44px, 12vw, 90px);
-    font-weight: 400;
-    color: #faf5ee;
-    line-height: 1;
-    letter-spacing: 0.02em;
-    text-shadow: 0 2px 20px #00000055;
-    display: inline-block;
-  }
-  .hero-date sup {
-    font-size: 28%;
-    vertical-align: middle;
-    letter-spacing: 0.15em;
-    color: #faf0e0bb;
-    display: inline-block;
-    margin-left: 6px;
-  }
-  .hero-year {
-    font-family: var(--font-noto);
-    font-weight: 300;
-    font-size: 13px;
-    color: #faf0e0aa;
-    letter-spacing: 0.2em;
-    margin-top: 4px;
-  }
+    .hero-sub {
+      font-family: var(--font-noto);
+      font-weight: 300;
+      font-size: clamp(11px, 2vw, 15px);
+      letter-spacing: 0.25em;
+      color: #faf0e0bb;
+      margin-top: 10px;
+    }
 
-  .hero-venue {
-    text-align: right;
-    color: #faf0e0cc;
-  }
-  .hero-venue-name {
-    font-family: var(--font-en);
-    font-size: clamp(16px, 3vw, 22px);
-    letter-spacing: 0.08em;
-    line-height: 1.3;
-  }
-  .hero-venue-sub {
-    font-family: var(--font-noto);
-    font-weight: 300;
-    font-size: 12px;
-    color: #faf0e099;
-    letter-spacing: 0.15em;
-    margin-top: 4px;
-  }
+    .hero-bottom {
+      position: relative;
+      z-index: 2;
+      padding: 10rem 1.5rem 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
 
-  .hero-tags {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    padding: 0 1rem 2.5rem;
-    flex-wrap: wrap;
-  }
-  .tag {
-    background: var(--red);
-    color: #faf0e0;
-    font-family: var(--font-noto);
-    font-size: 13px;
-    padding: 7px 20px;
-    border-radius: 24px;
-    letter-spacing: 0.1em;
-  }
+    .hero-date {
+      font-family: var(--font-noto);
+      font-size: clamp(44px, 12vw, 90px);
+      font-weight: 400;
+      color: #faf5ee;
+      line-height: 1;
+      letter-spacing: 0.02em;
+      text-shadow: 0 2px 20px #00000055;
+      display: inline-block;
+    }
 
-  /* ── SECTIONS ── */
-  section {
-    padding: 2rem 1rem;
-    max-width: 780px;
-    margin: 0 auto;
-  }
+    .hero-date sup {
+      font-size: 28%;
+      vertical-align: middle;
+      letter-spacing: 0.15em;
+      color: #faf0e0bb;
+      display: inline-block;
+      margin-left: 6px;
+    }
 
-  .section-en {
-    font-family: var(--font-en);
-    font-size: 11px;
-    letter-spacing: 0.35em;
-    color: var(--red);
-    text-transform: uppercase;
-    margin-bottom: 6px;
-  }
+    .hero-year {
+      font-family: var(--font-noto);
+      font-weight: 300;
+      font-size: 13px;
+      color: #faf0e0aa;
+      letter-spacing: 0.2em;
+      margin-top: 4px;
+    }
 
-  .section-title {
-    font-family: var(--font-min);
-    font-size: clamp(22px, 4vw, 30px);
-    font-weight: 400;
-    color: var(--brown);
-    letter-spacing: 0.5rem;
-    margin-bottom: 0.1rem;
-    padding-bottom: 0.1rem;
-    border-bottom: 0.5px solid #c8941033;
-  }
+    .hero-venue-name {
+      font-family: var(--font-en);
+      font-size: clamp(16px, 3vw, 22px);
+      letter-spacing: 0.08em;
+      line-height: 1.3;
+    }
 
-  /* ── OVERVIEW ── */
-  .overview-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1px;
-    background: #c8941022;
-    border: 0.5px solid #c8941033;
-    border-radius: 4px;
-    overflow: hidden;
-    margin-bottom: 1rem;
-  }
-  .overview-item {
-    background: var(--cream);
-    padding: 1rem 1rem;
-  }
-  .overview-label {
-    font-size: 10px;
-    letter-spacing: 0.3em;
-    color: var(--gold);
-    margin-bottom: 6px;
-    font-family: var(--font-en);
-    text-transform: uppercase;
-  }
-  .overview-value {
-    font-family: var(--font-min);
-    font-size: 16px;
-    color: var(--brown);
-    letter-spacing: 0.05em;
-    line-height: 1.5;
-  }
+    .hero-venue-sub {
+      font-family: var(--font-noto);
+      font-weight: 300;
+      font-size: 12px;
+      color: #faf0e099;
+      letter-spacing: 0.15em;
+      margin-top: 4px;
+    }
 
-  .overview-body {
-    font-size: 14px;
-    line-height: 2;
-    color: var(--brown-light);
-    text-align: center;
-    letter-spacing: 0.05em;
-  }
+    .hero-tags {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      padding: 0 1rem 2.5rem;
+      flex-wrap: wrap;
+    }
 
-  /* ── ARTIST ── */
-  .artist-cards {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-  .artist-card {
-    border: 0.5px solid #c8941033;
-    border-radius: 4px;
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: 6px 1fr;
-  }
-  .artist-bar { background: var(--red); }
-  .artist-body { padding: 1.4rem 1.6rem; }
-  .artist-flag {
-    font-size: 20px;
-    margin-bottom: 6px;
-  }
-  .artist-name {
-    font-family: var(--font-min);
-    font-size: 20px;
-    color: var(--brown);
-    letter-spacing: 0.08em;
-    margin-bottom: 4px;
-  }
-  .artist-role {
-    font-size: 11px;
-    letter-spacing: 0.2em;
-    color: var(--gold);
-    margin-bottom: 10px;
-    font-family: var(--font-en);
-  }
-  .artist-desc {
-    font-size: 13px;
-    line-height: 1.9;
-    color: var(--brown-light);
-  }
-  .artist-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    margin-top: 10px;
-  }
-  .artist-tag {
-    background: var(--gold-light);
-    border: 0.5px solid #c8941044;
-    color: var(--brown-light);
-    font-size: 11px;
-    padding: 3px 10px;
-    border-radius: 2px;
-    letter-spacing: 0.1em;
-  }
+    .tag {
+      background: var(--red);
+      color: #faf0e0;
+      font-family: var(--font-noto);
+      font-size: 12px;
+      padding: 6px 16px;
+      border-radius: 24px;
+      letter-spacing: 0.1em;
+    }
 
-  /* ── TIMETABLE ── */
-  .timetable {
-    border: 0.5px solid #c8941033;
-    border-radius: 4px;
-    overflow: hidden;
-  }
-  .tt-header {
-    background: var(--red);
-    color: #faf0e0;
-    padding: 10px 20px;
-    font-size: 12px;
-    letter-spacing: 0.3em;
-    font-family: var(--font-en);
-  }
-  .tt-row {
-    display: grid;
-    grid-template-columns: 80px 1fr;
-    border-bottom: 0.5px solid #c8941022;
-    background: var(--cream);
-  }
-  .tt-row:last-child { border-bottom: none; }
-  .tt-row.session { background: #8b2e2e08; }
-  .tt-time {
-    padding: 14px 16px;
-    font-family: var(--font-en);
-    font-size: 14px;
-    letter-spacing: 0.05em;
-    color: var(--red);
-    border-right: 0.5px solid #c8941022;
-    display: flex;
-    align-items: center;
-  }
-  .tt-content {
-    padding: 14px 16px;
-  }
-  .tt-act {
-    font-family: var(--font-min);
-    font-size: 15px;
-    color: var(--brown);
-    letter-spacing: 0.05em;
-  }
-  .tt-note {
-    font-size: 11px;
-    color: var(--brown-light);
-    letter-spacing: 0.05em;
-    margin-top: 2px;
-  }
-  .tt-note.session-note { color: var(--red); }
-  .tt-tbd {
-    font-size: 11px;
-    color: var(--brown-light);
-    letter-spacing: 0.15em;
-    margin-top: 6px;
-    font-family: var(--font-en);
-    font-style: italic;
-  }
+    /* ── SECTIONS ── */
+    section {
+      padding: 2.5rem 1rem;
+      max-width: 780px;
+      margin: 0 auto;
+    }
 
-  /* ── FOOD ── */
-  .food-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-  }
-  .food-card {
-    border: 0.5px solid #c8941033;
-    border-radius: 4px;
-    padding: 1.4rem;
-    background: var(--cream);
-    position: relative;
-  }
-  .food-icon {
-    font-size: 28px;
-    margin-bottom: 8px;
-  }
-  .food-name-zh {
-    font-family: var(--font-min);
-    font-size: 18px;
-    color: var(--red);
-    letter-spacing: 0.05em;
-    margin-bottom: 2px;
-  }
-  .food-name-ja {
-    font-size: 12px;
-    color: var(--brown-light);
-    letter-spacing: 0.1em;
-    margin-bottom: 8px;
-  }
-  .food-desc {
-    font-size: 12px;
-    line-height: 1.8;
-    color: var(--brown-light);
-  }
-  .food-badge {
-    position: absolute;
-    top: 10px; right: 10px;
-    background: var(--red);
-    color: #faf0e0;
-    font-size: 9px;
-    padding: 2px 7px;
-    border-radius: 2px;
-    letter-spacing: 0.1em;
-  }
-  .food-note {
-    margin-top: 1.5rem;
-    padding: 1rem 1.2rem;
-    background: var(--gold-light);
-    border-left: 2px solid var(--gold);
-    border-radius: 2px;
-    font-size: 12px;
-    color: var(--brown-light);
-    line-height: 1.8;
-    letter-spacing: 0.03em;
-  }
+    .section-en {
+      font-family: var(--font-en);
+      font-size: 11px;
+      letter-spacing: 0.35em;
+      color: var(--red);
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
 
-  /* ── TIP ── */
-  .tip-box {
-    border: 0.5px solid #c8941033;
-    border-radius: 4px;
-    overflow: hidden;
-  }
-  .tip-header {
-    background: var(--brown);
-    color: #faf0e0;
-    padding: 14px 20px;
-    font-family: var(--font-min);
-    font-size: 16px;
-    letter-spacing: 0.1em;
-  }
-  .tip-body {
-    padding: 1.4rem 1.6rem;
-    background: var(--cream);
-  }
-  .tip-body p {
-    font-size: 13px;
-    line-height: 2;
-    color: var(--brown-light);
-    margin-bottom: 1rem;
-  }
-  .tip-steps {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 0.5rem;
-  }
-  .tip-step {
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
-  }
-  .tip-num {
-    min-width: 28px; height: 28px;
-    border-radius: 50%;
-    background: var(--red);
-    color: #faf0e0;
-    font-family: var(--font-en);
-    font-size: 13px;
-    display: flex; align-items: center; justify-content: center;
-  }
-  .tip-text {
-    font-size: 13px;
-    line-height: 1.8;
-    color: var(--brown-light);
-    padding-top: 4px;
-  }
+    .section-title {
+      font-family: var(--font-min);
+      font-size: clamp(20px, 4vw, 30px);
+      font-weight: 400;
+      color: var(--brown);
+      letter-spacing: 0.4rem;
+      margin-bottom: 0.1rem;
+      padding-bottom: 0.1rem;
+      border-bottom: 0.5px solid #c8941033;
+    }
 
-  /* ── ACCESS ── */
-  .access-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.5rem;
-    margin-bottom: 0.5rem;
-  }
-  @media (max-width: 520px) { .access-grid { grid-template-columns: 1fr; } }
-  .access-item {
-    border: 0.5px solid #c8941033;
-    border-radius: 4px;
-    padding: 1rem 1rem;
-    background: var(--cream);
-  }
-  .access-label {
-    font-size: 10px;
-    letter-spacing: 0.3em;
-    color: var(--gold);
-    margin-bottom: 6px;
-    font-family: var(--font-en);
-    text-transform: uppercase;
-  }
-  .access-value {
-    font-family: var(--font-noto);
-    font-size: 13px;
-    line-height: 1.8;
-    color: var(--brown);
-  }
-  .map-placeholder {
-    background: #e8dcc8;
-    border-radius: 4px;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    border: 0.5px solid #c8941033;
-  }
-  .map-placeholder p {
-    font-size: 13px;
-    color: var(--brown-light);
-    letter-spacing: 0.1em;
-  }
-  .map-btn {
-    display: inline-block;
-    margin-top: 10px;
-    background: var(--red);
-    color: #faf0e0;
-    text-decoration: none;
-    font-size: 12px;
-    padding: 8px 20px;
-    border-radius: 2px;
-    letter-spacing: 0.15em;
-    font-family: var(--font-noto);
-  }
+    /* ── OVERVIEW ── */
+    .overview-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: #c8941022;
+      border: 0.5px solid #c8941033;
+      border-radius: 4px;
+      overflow: hidden;
+      margin-bottom: 1rem;
+    }
 
-  /* ── FOOTER ── */
-  footer {
-    background: var(--brown);
-    color: #faf0e0aa;
-    text-align: center;
-    padding: 2.5rem 1rem;
-  }
-  footer .footer-title {
-    font-family: var(--font-min);
-    font-size: 18px;
-    color: #faf0e0dd;
-    letter-spacing: 0.15em;
-    margin-bottom: 6px;
-  }
-  footer .footer-zh {
-    font-size: 12px;
-    color: var(--red);
-    letter-spacing: 0.3em;
-    margin-bottom: 12px;
-  }
-  footer .footer-credit {
-    font-size: 11px;
-    letter-spacing: 0.15em;
-    color: #faf0e055;
-    margin-top: 16px;
-  }
+    .overview-item {
+      background: var(--cream);
+      padding: 1.2rem 1rem;
+    }
 
-  /* ── DIVIDER ── */
-  .divider {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin: 0 auto 2rem;
-    max-width: 200px;
-  }
- 
+    .overview-item-middle {
+      border-left: 0.5px solid #c8941033;
+      border-right: 0.5px solid #c8941033;
+    }
 
-  /* ── SCROLL FADE ── */
-  .fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-  }
-  .fade-in.visible {
-    opacity: 1;
-    transform: none;
-  }
+    .overview-label {
+      font-size: 10px;
+      letter-spacing: 0.3em;
+      color: var(--gold);
+      margin-bottom: 6px;
+      font-family: var(--font-en);
+      text-transform: uppercase;
+    }
 
-  .sep {
-    width: 100%;
-    height: 0.5px;
-    background: linear-gradient(to right, transparent, #c8941033, transparent);
-    margin: 0;
-  }
-</style>
+    .overview-value {
+      font-family: var(--font-min);
+      font-size: 16px;
+      color: var(--brown);
+      letter-spacing: 0.05em;
+      line-height: 1.5;
+    }
+
+    .overview-body {
+      font-size: 14px;
+      line-height: 2;
+      color: var(--brown-light);
+      text-align: center;
+      letter-spacing: 0.05em;
+    }
+
+    /* ── ARTIST ── */
+    .artist-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .artist-card {
+      border: 0.5px solid #c8941033;
+      border-radius: 4px;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 6px 1fr;
+    }
+
+    .artist-bar {
+      background: var(--red);
+    }
+
+    .artist-body {
+      padding: 1.4rem 1.6rem;
+    }
+
+    .artist-name {
+      font-family: var(--font-min);
+      font-size: 20px;
+      color: var(--brown);
+      letter-spacing: 0.08em;
+      margin-bottom: 4px;
+    }
+
+    .artist-role {
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      color: var(--gold);
+      margin-bottom: 10px;
+      font-family: var(--font-en);
+    }
+
+    .artist-desc {
+      font-size: 13px;
+      line-height: 1.9;
+      color: var(--brown-light);
+    }
+
+    .artist-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 10px;
+    }
+
+    .artist-tag {
+      background: var(--gold-light);
+      border: 0.5px solid #c8941044;
+      color: var(--brown-light);
+      font-size: 11px;
+      padding: 3px 10px;
+      border-radius: 2px;
+      letter-spacing: 0.1em;
+    }
+
+    /* ── TIMETABLE ── */
+    .timetable {
+      border: 0.5px solid #c8941033;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .tt-header {
+      background: var(--red);
+      color: #faf0e0;
+      padding: 10px 20px;
+      font-size: 12px;
+      letter-spacing: 0.3em;
+      font-family: var(--font-en);
+    }
+
+    /* ── FOOD / TIP / ACCESS / FOOTER のデザイン復旧 ── */
+    .food-note {
+      margin-top: 1.5rem;
+      padding: 1rem 1.2rem;
+      background: var(--gold-light);
+      border-left: 2px solid var(--gold);
+      border-radius: 2px;
+      font-size: 12px;
+      color: var(--brown-light);
+      line-height: 1.8;
+      letter-spacing: 0.03em;
+    }
+
+    .tip-box {
+      border: 0.5px solid #c8941033;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .tip-header {
+      background: var(--brown);
+      color: #faf0e0;
+      padding: 14px 20px;
+      font-family: var(--font-min);
+      font-size: 16px;
+      letter-spacing: 0.1em;
+    }
+    .tip-body {
+      padding: 1.4rem 1.6rem;
+      background: var(--cream);
+    }
+    .tip-body p {
+      font-size: 13px;
+      line-height: 2;
+      color: var(--brown-light);
+      margin-bottom: 1rem;
+    }
+
+    .access-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .access-item {
+      border: 0.5px solid #c8941033;
+      border-radius: 4px;
+      padding: 1rem 1rem;
+      background: var(--cream);
+    }
+    .access-label {
+      font-size: 10px;
+      letter-spacing: 0.3em;
+      color: var(--gold);
+      margin-bottom: 6px;
+      font-family: var(--font-en);
+      text-transform: uppercase;
+    }
+    .access-value {
+      font-family: var(--font-noto);
+      font-size: 13px;
+      line-height: 1.8;
+      color: var(--brown);
+    }
+    .map-btn {
+      display: inline-block;
+      margin-top: 10px;
+      background: var(--red);
+      color: #faf0e0;
+      text-decoration: none;
+      font-size: 12px;
+      padding: 8px 20px;
+      border-radius: 2px;
+      letter-spacing: 0.15em;
+      font-family: var(--font-noto);
+    }
+
+    footer {
+      background: var(--brown);
+      color: #faf0e0aa;
+      text-align: center;
+      padding: 2.5rem 1rem;
+    }
+    footer .footer-title {
+      font-family: var(--font-min);
+      font-size: 18px;
+      color: #faf0e0dd;
+      letter-spacing: 0.15em;
+      margin-bottom: 6px;
+    }
+    footer .footer-zh {
+      font-size: 12px;
+      color: var(--red);
+      letter-spacing: 0.3em;
+      margin-bottom: 12px;
+    }
+    footer .footer-credit {
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      color: #faf0e055;
+      margin-top: 16px;
+    }
+
+    /* ── DIVIDER & SEP ── */
+    .divider {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 0 auto 2rem;
+      max-width: 200px;
+    }
+
+    .divider-line {
+      flex: 1;
+      height: 0.5px;
+      background: #c8941055;
+    }
+
+    .divider-diamond {
+      width: 6px;
+      height: 6px;
+      background: var(--gold);
+      transform: rotate(45deg);
+    }
+
+    .sep {
+      width: 100%;
+      height: 0.5px;
+      background: linear-gradient(to right, transparent, #c8941033, transparent);
+      margin: 0;
+    }
+
+    /* ── SCROLL FADE ── */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    /* ── 📱 スマホ用最適化（レスポンシブ設定） ── */
+    @media (max-width: 600px) {
+      /* メニューの間隔を狭めて1行に収める */
+      nav {
+        gap: 0.8rem;
+        padding: 10px 0.5rem;
+      }
+      nav a {
+        font-size: 12px;
+        letter-spacing: 0.05em;
+      }
+      
+      /* 概要ブロックを縦並びに変更 */
+      .overview-grid {
+        grid-template-columns: 1fr;
+      }
+      .overview-item-middle {
+        border-left: none;
+        border-right: none;
+        border-top: 0.5px solid #c8941033;
+        border-bottom: 0.5px solid #c8941033;
+      }
+
+      /* マップエリアを縦並びに変更 */
+      .access-grid {
+        grid-template-columns: 1fr;
+      }
+
+      /* スマホではカードの左右の余白を少し減らす */
+      .artist-body {
+        padding: 1.2rem 1rem;
+      }
+
+      /* 余白調整 */
+      section {
+        padding: 2rem 1rem;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-<nav>
-  <a href="#overview">概要</a>
-  <a href="#artist">出演</a>
-  <a href="#timetable">時間</a>
-  <a href="#food">フード</a>
-  <a href="#access">地図</a>
-</nav>
+  <nav>
+    <a href="#overview">概要</a>
+    <a href="#artist">ライブ</a>
+    <a href="#food">出店</a>
+    <a href="#access">アクセス</a>
+  </nav>
 
-<!-- HERO -->
-<div class="hero">
-  <div class="hero-img"></div>
-  <div class="hero-grad"></div>
-  <div class="hero-top">
-   
-    <div class="hero-en">MINAMIBOSO SHIRAHAMA TAIWAN FES 2026</div>
-    <h1 class="hero-title">白浜<span class="accent">×</span>台湾フェス</h1>
-    <p class="hero-sub">〜 里山で体験する日台交流ライブ 〜</p>
-  </div>
-<div class="hero-bottom" style="justify-content: center; text-align: center; flex-direction: column; align-items: center; gap: 0.5rem;">
-  <div class="hero-date">6.14<sup>SUN</sup></div>
-  <div class="hero-year">2026</div>
-  <div style="height: 0.5px; width: 60px; background: #faf0e055; margin: 6px auto;"></div>
-  <div class="hero-venue-name" style="color: #faf0e0cc; font-family: 'Cormorant Garamond', serif; font-size: clamp(14px, 3vw, 20px); letter-spacing: 0.1em;">SUNAO Retreat 奥白浜</div>
-  <div class="hero-venue-sub">千葉県南房総市</div>
-</div>$
-  <div class="hero-tags">
-    <span class="tag">入場無料</span>
-    <span class="tag">音楽ライブ</span>
-    <span class="tag">台湾小吃</span>
-  </div>
-</div>
+  <div class="hero">
+    <div class="hero-img"></div>
+    <div class="hero-grad"></div>
+    <div class="hero-top">
+      <div class="hero-en">MINAMIBOSO SHIRAHAMA TAIWAN FES 2026</div>
+      <h1 class="hero-title">白浜<span class="accent">×</span>台湾フェス</h1>
+      <p class="hero-sub">〜 里山で体験する日台交流ライブ 〜</p>
+    </div>
+    <div class="hero-bottom"
+      style="justify-content: center; text-align: center; flex-direction: column; align-items: center; gap: 0.5rem;">
+      <div class="hero-date">6.14<sup>SUN</sup></div>
+      <div class="hero-year">2026</div>
+      
+      <div style="font-family: var(--font-en); font-size: 14px; letter-spacing: 0.15em; color: #e8b840; border: 0.5px solid #e8b84088; padding: 4px 16px; border-radius: 20px; margin-top: 4px;">
+        OPEN 12:00
+      </div>
 
-<!-- OVERVIEW -->
-<section id="overview">
-  <div class="fade-in">
-    <p class="section-en">Event Overview</p>
-    <h2 class="section-title">イベント概要</h2>
-    <div class="divider"><div class="divider-line"></div><div class="divider-diamond"></div><div class="divider-line"></div></div>
-<div class="overview-grid" style="grid-template-columns: repeat(3, 1fr);">
-      <div class="overview-item" style="text-align:center;">
-        <div class="overview-label">Date</div>
-        <div class="overview-value"><br/>6月14日（日）</div>
+      <div style="height: 0.5px; width: 60px; background: #faf0e055; margin: 10px auto 6px;"></div>
+      <div class="hero-venue-name"
+        style="color: #faf0e0cc; font-family: var(--font-en); font-size: clamp(14px, 3vw, 20px); letter-spacing: 0.1em;">
+        SUNAO Retreat 奥白浜</div>
+      <div class="hero-venue-sub">千葉県南房総市</div>
+    </div>
+    <div class="hero-tags">
+      <span class="tag">入場無料</span>
+      <span class="tag">音楽ライブ</span>
+      <span class="tag">台湾小吃</span>
+    </div>
+  </div>
+
+  <section id="overview">
+    <div class="fade-in">
+      <p class="section-en">Event Overview</p>
+      <h2 class="section-title">イベント概要</h2>
+      <div class="divider">
+        <div class="divider-line"></div>
+        <div class="divider-diamond"></div>
+        <div class="divider-line"></div>
       </div>
-      <div class="overview-item" style="text-align:center; border-left: 0.5px solid #c8941033; border-right: 0.5px solid #c8941033;">
-        <div class="overview-label">Place</div>
-        <div class="overview-value">SUNAO Retreat<br>奥白浜<br><span style="font-size:12px;color:var(--brown-light);">千葉県南房総市</span></div>
+      
+      <div class="overview-grid">
+        <div class="overview-item" style="text-align:center;">
+          <div class="overview-label">Date & Time</div>
+          <div class="overview-value">6月14日（日）<br><span style="font-size:14px; color:var(--brown-light); font-family: var(--font-noto); letter-spacing: 0.05em;">Open 12:00</span></div>
+        </div>
+        
+        <div class="overview-item overview-item-middle" style="text-align:center;">
+          <div class="overview-label">Place</div>
+          <div class="overview-value">SUNAO Retreat<br>奥白浜<br><span
+              style="font-size:12px;color:var(--brown-light);">千葉県南房総市</span></div>
+        </div>
+        
+        <div class="overview-item" style="text-align:center;">
+          <div class="overview-label">Admission</div>
+          <div class="overview-value"><br />入場無料</div>
+        </div>
       </div>
-      <div class="overview-item" style="text-align:center;">
-        <div class="overview-label">Admission</div>
-        <div class="overview-value"><br/>入場無料<br><span style="font-size:12px;color:var(--brown-light);"></span></div>
+      
+      <p class="overview-body">
+        南房総の古民家で、台湾音楽と出会う初夏。<br>
+        日本や台湾で愛され続ける名曲から西洋ジャズまで ——<br>
+        里山に響く生演奏をお届けします。
+      </p>
+
+      <div style="margin-top: 1.5rem; padding: 1rem 1.2rem; background: #e8b84011; border: 0.5px solid #c8941033; border-radius: 4px; text-align: center;">
+        <span style="font-size: 13px; color: var(--red); letter-spacing: 0.1em; display: inline-block; margin-bottom: 4px;">☔️ 雨天時のご案内</span><br>
+        <span style="font-size: 12px; color: var(--brown-light); letter-spacing: 0.05em; line-height: 1.8;">
+          雨天時の開催状況につきましては、本ホームページおよび公式SNSにてお知らせいたします。
+        </span>
       </div>
     </div>
-    <p class="overview-body">
-      南房総の古民家で、台湾音楽と出会う初夏。<br>
-      日本や台湾で愛され続ける名曲から西洋ジャズまで ——<br>
-      里山に響く生演奏をお届けします。
-    </p>
-  </div>
-</section>
+  </section>
 
-<div class="sep"></div>
+  <div class="sep"></div>
 
-<!-- ARTIST -->
-<section id="artist">
-  <div class="fade-in">
-    <p class="section-en">Artists</p>
-    <h2 class="section-title">アーティスト紹介</h2>
-    <div class="divider"><div class="divider-line"></div><div class="divider-diamond"></div><div class="divider-line"></div></div>
-    <div class="artist-cards">
-      <div class="artist-card">
-        <div class="artist-bar"></div>
-        <div class="artist-body">
+  <section id="artist">
+    <div class="fade-in">
+      <p class="section-en">Artists</p>
+      <h2 class="section-title">アーティスト紹介</h2>
+      <div class="divider">
+        <div class="divider-line"></div>
+        <div class="divider-diamond"></div>
+        <div class="divider-line"></div>
+      </div>
+      <div class="artist-cards">
+        <div class="artist-card">
+          <div class="artist-bar"></div>
+          <div class="artist-body" style="text-align: center;">
+            <img src="band-logo.jpg"
+              style="width: 200px; height: 200px; object-fit: contain; border-radius: 8px; background: #fff8f0; padding: 6px; margin-bottom: 6px; display: block; margin-left: auto; margin-right: auto;" alt="畢(Be) My Friends">
+            <div class="artist-name">畢(Be) My Friends</div>
+            <div class="artist-role">Guest Band from Taiwan</div>
+            
+            <div class="artist-desc" style="text-align: left; margin-top: 1.5rem;">
+              <strong style="color: var(--red); display: block; margin-bottom: 1.2rem; line-height: 1.8; text-align: center;">
+                テレサ・テンの名曲から、お洒落な西洋ジャズ、現代の台湾ポップスまで。<br>
+                里山の緑に溶け込む、1日限りの贅沢なクロスオーバー・ライブ！
+              </strong>
+              
+              台湾で第一線で活動する実力派ミュージシャンたちが、このフェスのために集結した特別編成のスペシャルバンドです。<br><br>
+              今回のステージでは、日本と台湾の架け橋として今なお愛され続けるテレサ・テンの『夜来香』や『月亮代表我的心』などの歌謡名曲をはじめ、台湾を代表するアーティスト・ジェイ・チョウ（周杰倫）らの現代ポップスまでを網羅。<br><br>
+              さらに、初夏の里山の開放的な空気に心地よく響く『Fly Me To The Moon』や『Take the "A" Train（A列車で行こう）』といった、お洒落で本格的な西洋ジャズ・スタンダードもお届けします。<br><br>
+              懐かしさと新しさが交差する、ノスタルジックでエモーショナルな生演奏。心地よい風に吹かれながら、音楽で旅する至福のひと時を心ゆくまでお楽しみください。
+            </div>
+
+            <div class="artist-tags" style="text-align: center; justify-content: center; margin-top: 1.5rem;">
+              <span class="artist-tag">#台湾ポップス</span>
+              <span class="artist-tag">#西洋ジャズ</span>
+              <span class="artist-tag">#里山ライブ</span>
+              <span class="artist-tag">#日台交流</span>
+              <span class="artist-tag">#1日限りのスペシャルバンド</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="setlist">
+    <div class="fade-in">
+      <p class="section-en">Set List</p>
+      <h2 class="section-title">セットリスト</h2>
+      <p style="font-size:13px; color:var(--brown-light); text-align:center; margin-bottom:1.5rem; line-height:2;">
+        当日演奏予定の楽曲をSpotifyプレイリストで公開中。<br>
+        ぜひ予習してお越しください🎵
+      </p>
+      <iframe data-testid="embed-iframe" style="border-radius:12px"
+        src="https://open.spotify.com/embed/playlist/1GtyTjDKBdHP97j6RUFvsz?utm_source=generator" width="100%"
+        height="352" frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <div class="sep"></div>
+  <div class="sep"></div>
+
+  <section id="timetable">
+    <div class="fade-in">
+      <p class="section-en">Time Table</p>
+      <h2 class="section-title">タイムテーブル</h2>
+      <div class="divider">
+        <div class="divider-line"></div>
+        <div class="divider-diamond"></div>
+        <div class="divider-line"></div>
+      </div>
+      <div class="timetable">
+        <div class="tt-header" style="font-family: var(--font-noto);">2026.6.14 SUN</div>
+        <div style="padding: 3rem 1.5rem; text-align: center; background: var(--cream);">
+          <div
+            style="font-family: var(--font-noto); font-size: 32px; font-weight: 300; letter-spacing: 0.3em; color: var(--red); margin-bottom: 12px;">
+            Coming Soon</div>
+          <div
+            style="font-family: var(--font-noto); font-size: 13px; color: var(--brown-light); letter-spacing: 0.15em; line-height: 2;">
+            タイムテーブルは決定次第、公開予定です。<br>
+            続報をお待ちください。
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="sep"></div>
+
+  <section id="food">
+    <div class="fade-in">
+      <p class="section-en">DRINK & FOOD</p>
+      <h2 class="section-title">台湾フード＆ドリンク</h2>
+      <p style="font-size:13px; color:var(--brown-light); line-height:2; margin-bottom:1.5rem;">
+        南房総の豊かな食材と、本場台湾の味わいがコラボレーションした特製メニューをお楽しみください。
+      </p>
+
+      <div style="background: var(--cream); border: 0.5px solid #c8941033; border-radius: 4px; padding: 1.8rem 1.2rem;">
+        
+        <h3 style="font-family: var(--font-en); color: var(--gold); letter-spacing: 0.2em; font-size: 14px; text-align: center; border-bottom: 1px solid #c8941022; padding-bottom: 0.8rem; margin-bottom: 1.5rem;">
+          FOOD
+        </h3>
+        
+        <div style="margin-bottom: 1.5rem;">
+          <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 2px;">
+            <span style="font-size: 18px;">🍛</span>
+            <span style="font-family: var(--font-min); font-size: 16px; color: var(--red); letter-spacing: 0.05em;">南房総ジビエ 特製魯肉飯</span>
+          </div>
+          <div style="font-family: var(--font-en); font-size: 11px; color: var(--brown-light); margin-left: 30px; margin-bottom: 4px;">Minamiboso Gibier Minced Pork Rice</div>
+          <div style="font-size: 12px; color: var(--brown-light); line-height: 1.8; margin-left: 30px;">地元・南房総のジビエ肉をじっくり煮込んだ、旨味たっぷりの特製ルーローハンです。</div>
+        </div>
+
+        <div style="margin-bottom: 1.5rem;">
+          <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 2px;">
+            <span style="font-size: 18px;">🥣</span>
+            <span style="font-family: var(--font-min); font-size: 16px; color: var(--red); letter-spacing: 0.05em;">白浜豆花</span>
+          </div>
+          <div style="font-family: var(--font-en); font-size: 11px; color: var(--brown-light); margin-left: 30px; margin-bottom: 4px;">Shirahama Douhua (Tofu Pudding)</div>
+          <div style="font-size: 12px; color: var(--brown-light); line-height: 1.8; margin-left: 30px;">つるんとした優しい口当たりの豆乳デザート。ほのかな甘みのシロップでお召し上がりください。</div>
+        </div>
+
+        <div style="margin-bottom: 1.5rem;">
+          <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 2px;">
+            <span style="font-size: 18px;">🫓</span>
+            <span style="font-family: var(--font-min); font-size: 16px; color: var(--red); letter-spacing: 0.05em;">蔥油餅</span>
+          </div>
+          <div style="font-family: var(--font-en); font-size: 11px; color: var(--brown-light); margin-left: 30px; margin-bottom: 4px;">Cong You Bing (Scallion Pancake)</div>
+          <div style="font-size: 12px; color: var(--brown-light); line-height: 1.8; margin-left: 30px;">外はサクサク、中はモチモチ。ネギの香ばしさがたまらない台湾定番のスナックです。</div>
+        </div>
+
+        <div style="margin-bottom: 2.5rem;">
+          <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 2px;">
+            <span style="font-size: 18px;">🥚</span>
+            <span style="font-family: var(--font-min); font-size: 16px; color: var(--red); letter-spacing: 0.05em;">茶葉蛋</span>
+          </div>
+          <div style="font-family: var(--font-en); font-size: 11px; color: var(--brown-light); margin-left: 30px; margin-bottom: 4px;">Cha Ye Dan (Taiwanese Tea Egg)</div>
+          <div style="font-size: 12px; color: var(--brown-light); line-height: 1.8; margin-left: 30px;">お茶葉と台湾の香辛料（五香粉）でじっくり煮込んだ、味の染みた定番ゆでたまごです。</div>
+        </div>
+
+        <h3 style="font-family: var(--font-en); color: var(--gold); letter-spacing: 0.2em; font-size: 14px; text-align: center; border-bottom: 1px solid #c8941022; padding-bottom: 0.8rem; margin-bottom: 1.5rem;">
+          DRINK
+        </h3>
+
+        <div style="margin-bottom: 1.5rem;">
+          <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 2px;">
+            <span style="font-size: 18px;">🥛</span>
+            <span style="font-family: var(--font-min); font-size: 16px; color: var(--red); letter-spacing: 0.05em;">冬瓜豆乳茶</span>
+          </div>
+          <div style="font-family: var(--font-en); font-size: 11px; color: var(--brown-light); margin-left: 30px; margin-bottom: 4px;">Winter Melon Soy Milk Tea</div>
+          <div style="font-size: 12px; color: var(--brown-light); line-height: 1.8; margin-left: 30px;">台湾伝統のすっきりとした甘さの「冬瓜茶」に、まろやかな豆乳を合わせました。</div>
+        </div>
+
+        <div style="margin-bottom: 0.5rem;">
+          <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 2px;">
+            <span style="font-size: 18px;">🍵</span>
+            <span style="font-family: var(--font-min); font-size: 16px; color: var(--red); letter-spacing: 0.05em;">台湾高山烏龍茶</span>
+          </div>
+          <div style="font-family: var(--font-en); font-size: 11px; color: var(--brown-light); margin-left: 30px; margin-bottom: 4px;">Taiwan Gaoshan Oolong Tea</div>
+          <div style="font-size: 12px; color: var(--brown-light); line-height: 1.8; margin-left: 30px;">標高の高い茶園で育った、芳醇な香りとすっきりとした後味が楽しめる本格烏龍茶です。</div>
+        </div>
+
+      </div>
+      
+      <div class="food-note">
+        当日は、上記メニューのほかにもその他メニューを各種ご用意しております。<br>
+        ※メニュー内容や食材は予告なく変更する可能性がございます。あらかじめご了承ください。
+      </div>
+    </div>
+  </section>
+
+  <div class="sep"></div>
+
+  <section id="market">
+    <div class="fade-in">
+      <p class="section-en">Market & Relaxation</p>
+      <h2 class="section-title">出展ブース</h2>
+      <div class="divider">
+        <div class="divider-line"></div>
+        <div class="divider-diamond"></div>
+        <div class="divider-line"></div>
+      </div>
+
+      <div class="artist-cards">
+        
+        <div class="artist-card">
+          <div class="artist-bar" style="background: var(--gold);"></div>
+          <div class="artist-body" style="text-align: center;">
+<!-- 📷 5枚の横スクロール写真ギャラリー（スナップ位置を左端に調整） -->
+           <div style="display: flex; gap: 8px; overflow-x: auto; padding-bottom: 12px; margin-bottom: 1rem; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;">
+             <img src="tounky1.jpg" alt="作品写真1" style="height: 150px; width: auto; flex-shrink: 0; border-radius: 4px; scroll-snap-align: start;">
+             <img src="tounky2.jpg" alt="作品写真2" style="height: 150px; width: auto; flex-shrink: 0; border-radius: 4px; scroll-snap-align: start;">
+             <img src="tounky3.jpg" alt="作品写真3" style="height: 150px; width: auto; flex-shrink: 0; border-radius: 4px; scroll-snap-align: start;">
+             <img src="tounky4.jpg" alt="作品写真4" style="height: 150px; width: auto; flex-shrink: 0; border-radius: 4px; scroll-snap-align: start;">
+             <img src="tounky5.jpg" alt="作品写真5" style="height: 150px; width: auto; flex-shrink: 0; border-radius: 4px; scroll-snap-align: start;">
+             
+             <!-- ▼ 最後の画像が右端にペタッとくっつかないようにするための透明なスキマ -->
+             <div style="width: 1px; flex-shrink: 0;"></div>
+            </div>
+
+            <div class="artist-name">TOUNKY WOOD WORKS</div>
+            <div class="artist-role" style="font-family: var(--font-noto); letter-spacing: 0.1em;">トゥンキーウッドワークス / 木工雑貨</div>
+            
+            <div style="display: flex; justify-content: center; gap: 10px; margin-top: 0.8rem; margin-bottom: 1rem;">
+              <a href="https://tounkywoodworks.com/index.html" target="_blank" style="display: inline-block; background: var(--brown); color: #faf0e0; text-decoration: none; font-size: 11px; padding: 6px 14px; border-radius: 20px; letter-spacing: 0.05em; font-family: var(--font-noto); transition: background 0.2s;">
+                🏠 詳しく見る
+              </a>
+              <a href="https://www.instagram.com/take_tounkywoodworks?igsh=MWp0ZjZiN2o4NWEweA==" target="_blank" style="display: inline-block; background: #e1306c; color: #fff; text-decoration: none; font-size: 11px; padding: 6px 14px; border-radius: 20px; letter-spacing: 0.05em; font-family: var(--font-noto); transition: opacity 0.2s;">
+              <i class="fa-brands fa-instagram"></i> Instagram
+              </a>
+            </div>
+
+            <div class="artist-desc" style="text-align: left; margin-top: 1rem;">
+              2017年、鴨川市に移住。<br>
+              創り手＝Take、伝え手＝Yumi<br>
+              夫婦で2007年に設立後、イベント出店を中心に活動しています。<br><br>
+              絵本の中に出てくるような丸みを帯びた木の小物達をテーマに、世界中の不思議な木目や色彩を持つ木材を加工しています。<br>
+              木材が持つストーリーをあなたの暮らしの中へ。
+            </div>
+          </div>
+        </div>
+
+        <div class="artist-card">
+          <div class="artist-bar" style="background: var(--gold);"></div>
+          <div class="artist-body" style="text-align: center;">
+            <img src="hibi.png" alt="日日工作室" style="width: 100%; max-width: 320px; height: auto; object-fit: contain; border-radius: 4px; margin-bottom: 1rem; display: block; margin-left: auto; margin-right: auto;">
+            
+            <div class="artist-name">日日工作室</div>
+            <div class="artist-role" style="font-family: var(--font-noto); letter-spacing: 0.1em;">ひびこうさくしつ </div>
+            <div class="artist-desc" style="text-align: left; margin-top: 1rem;">
+              台湾直伝の本格派！里山の心地よい風の中で、心も体もリフレッシュする至福のひと時を。<br><br>
+              台湾現地で10数年暮らした経験を持ち、台湾の師匠から直伝の技術を修めた実力派セラピストによる、本場・台湾の本格的な癒やしを体験してみませんか？<br>
+              里山の爽やかな風を感じながら、日頃の疲れをスッキリ解放していってください。
+            </div>
+          </div>
+        </div>
+
+        <div class="artist-card">
+          <div class="artist-bar" style="background: var(--gold);"></div>
+          <div class="artist-body" style="text-align: center;">
+            <div style="display: flex; gap: 8px; overflow-x: auto; padding-bottom: 8px; margin-bottom: 0.5rem; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;">
+              <img src="market1.png" alt="商品写真1" style="width: 50%; flex-shrink: 0; height: 180px; object-fit: cover; border-radius: 4px; background: #e8dcc8; scroll-snap-align: center;">
+              <img src="market2.png" alt="商品写真2" style="width: 50%; flex-shrink: 0; height: 180px; object-fit: cover; border-radius: 4px; background: #e8dcc8; scroll-snap-align: center;">
+              <img src="market3.png" alt="商品写真3" style="width: 50%; flex-shrink: 0; height: 180px; object-fit: cover; border-radius: 4px; background: #e8dcc8; scroll-snap-align: center;">
+              <img src="market4.png" alt="商品写真4" style="width: 50%; flex-shrink: 0; height: 180px; object-fit: cover; border-radius: 4px; background: #e8dcc8; scroll-snap-align: center;">
+            </div>
+            <p style="font-size: 10px; color: var(--brown-light); margin-bottom: 1.2rem; text-align: center;">※画像はイメージです</p>
+
+            <div class="artist-name">台湾レトロ雑貨 ＆ お土産マーケット</div>
+            <div class="artist-role" style="font-family: var(--font-noto); letter-spacing: 0.1em;">FRUITS & TEA LEAVES ＆ TAIWAN ZAKKA</div>
+            
+            <div class="artist-desc" style="text-align: left; margin-top: 1rem;">
+              台湾直輸入！おうちでも台湾気分を楽しめる、レトロで可愛い雑貨やこだわりのお土産をセレクトしました。フェスの思い出をご自宅やお土産に。現地台湾から買い付けた、日常がちょっと楽しくなるアイテムを集めました。<br><br>
+              <strong>🍍 本場の完熟ドライフルーツ＆茶葉</strong><br>
+              大人気の甘みが詰まった「愛文マンゴー」や珍しい「グァバ」などのドライフルーツ、おうちで本格的な香りに癒やされる「台湾烏龍茶」を、丁寧な小分けパックでご用意しました。<br><br>
+              <strong>🛍 レトロ可愛い！台湾の伝統雑貨</strong><br>
+              台湾のアイコンとも言える、赤・青・緑のボーダーがどこか懐かしくてお洒落な「漁師バッグ（茄芷袋）」やポーチをはじめ、日常使いにぴったりな「台湾トートバッグ」、手帳や小物に貼りたくなる「台湾立体シール」など、レトロポップな雑貨が並びます。<br><br>
+              <strong>🕯 日常に祈りを添えるお線香</strong><br>
+              現地のお寺で見かける、どこかエキゾチックな香りの「台湾お参りお線香（ピンクの線香）」も特別にお裾分け。<br><br>
+              里山をのんびりお散歩しながら、お気に入りの台湾を見つけてみてくださいね。
+            </div>
+          </div>
+        </div>
+
+        <div class="artist-card">
+          <div class="artist-bar" style="background: var(--gold);"></div>
+          <div class="artist-body" style="text-align: center;">
+            <img src="lily.png" alt="Lily's Taiwan Handmade" style="width: 100%; max-width: 320px; height: auto; object-fit: contain; border-radius: 4px; margin-bottom: 1rem; display: block; margin-left: auto; margin-right: auto;">
+
+            <div class="artist-name">Lily's Taiwan Handmade</div>
+            <div class="artist-role" style="font-family: var(--font-noto); letter-spacing: 0.1em;">台湾人作家によるレトロモダン小物</div>
+            
+            <div class="artist-desc" style="text-align: left; margin-top: 1rem;">
+              台湾の知る人ぞ知る丁寧な手仕事。日常にそっと彩りを添える、一点もののハンドメイド雑貨。<br><br>
+              どこか懐かしく、そして温かみのある空気感をそのまま形にしたような、特別なハンドメイドブースです。手掛けるのは、台湾人作家の「Lily」。<br><br>
+              台湾の伝統的なエッセンスを取り入れながら、現代のライフスタイルにも優しく馴染む、お洒落なポーチやぬくもり溢れる編み物小物をひとつひとつ丁寧に仕立てました。<br><br>
+              大量生産にはない、手仕事ならではの繊細なディテールと、台湾の色彩感覚が光るデザインは、まさに「知る人ぞ知る」特別な逸品。大切な人へのギフトや、自分へのとっておきのご褒美にぴったりです。<br>
+              世界にひとつだけの、あなただけのお気に入りと出会えますように。
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="tip">
+    <div class="fade-in">
+      <p class="section-en">Tip for the Band</p>
+      <h2 class="section-title">投げ銭について</h2>
+      <div class="divider">
+        <div class="divider-line"></div>
+        <div class="divider-diamond"></div>
+        <div class="divider-line"></div>
+      </div>
+      <div class="tip-box">
+        <div class="tip-header">応援のギフト — Tip for the Band</div>
+        <div class="tip-body">
+          <p>このイベントは<strong>入場無料</strong>です。<br />もし音楽が心に響いたら、アーティストへの「応援のギフト」として投げ銭（チップ）をいただけると幸いです。</p>
+          <span
+            style="font-size: 12px; color: var(--brown-light); margin-top: 6px; display: block;">※いただいた投げ銭は、アーティストへ全額お渡しします。</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="sep"></div>
+
+  <section id="access">
+    <div class="fade-in">
+      <p class="section-en">Access</p>
+      <h2 class="section-title">アクセス・地図</h2>
+      <div class="divider">
+        <div class="divider-line"></div>
+        <div class="divider-diamond"></div>
+        <div class="divider-line"></div>
+      </div>
+      <div class="access-grid">
+        <div style="margin-bottom: 1rem;">
+          <div class="access-item">
+            <div class="access-label">Venue</div>
+            <div class="access-value">
+              <strong>SUNAO Retreat 奥白浜</strong><br>
+              〒295-0102 千葉県南房総市白浜町白浜9088-1<br>
+              <span style="font-size: 12px; color: var(--brown-light); margin-top: 6px; display: block;">※
+                館山道・富浦ICより約30分 / 駐車場あり</span>
+            </div>
+          </div>
+        </div>
+        <div style="border-radius:4px; overflow:hidden; border: 0.5px solid #c8941033;"> 
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3271.3408686388084!2d139.8864701!3d34.9229872!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6017e54c215179ff%3A0x812d0623f690f6e0!2z44K544OK44Kq44Oq44OI44Oq44O844OI5aWl55m95rWcLeeZvea1nOixhuiFkOW3peaIvw!5e0!3m2!1sja!2sjp!4v1778132781435!5m2!1sja!2sjp" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div style="text-align:center; padding: 10px; background: var(--cream);"> 
+            <a class="map-btn" href="https://maps.app.goo.gl/qaBWfeG2JVYo3fq7A" target="_blank">Google マップで開く</a> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="sep"></div>
+
+  <section id="sns" style="padding-bottom: 4rem;">
+    <div class="fade-in">
+      <p class="section-en">Official Info</p>
+      <h2 class="section-title">主催・公式SNS</h2>
+      <div class="divider">
+        <div class="divider-line"></div>
+        <div class="divider-diamond"></div>
+        <div class="divider-line"></div>
+      </div>
+      
+      <div style="text-align: center; padding: 1rem 0;">
+        <p style="font-size: 13px; color: var(--brown); line-height: 2; margin-bottom: 1.5rem;">
+          SUNAO Retreat 奥白浜の公式SNSでは、イベントの最新情報や、里山の豊かな自然、日々の様子を配信しています。<br><br>
+          <strong style="color: var(--red);">最新情報を見逃さないよう、ぜひフォロー＆チャンネル登録をお願いします！</strong><br>
+          一緒にフェスを盛り上げましょう✨
+        </p>
+
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
           
-          <div class="artist-name">畢(Be) My Friends</div>
-          <div class="artist-role">Guest Band from Taiwan </div>
-          <div class="artist-desc">
-           台湾で活動するミュージシャンたちによる特別編成バンド。<br/>台湾民歌や日本や台湾で愛される名曲を南房総の里山に届けます。<br/>
-          </div>
-          <div class="artist-tags">
-            <span class="artist-tag">台湾民歌</span>
-            <span class="artist-tag">ジャズ</span>
-            <span class="artist-tag">日台交流</span>
-          </div>
-        </div>
-          </div>
+          <a href="https://sunaoretreat.jp/" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 8px; width: 45%; min-width: 140px; background: var(--brown); color: #faf0e0; text-decoration: none; font-size: 13px; font-family: var(--font-noto); letter-spacing: 0.1em; padding: 12px 10px; border-radius: 4px; transition: opacity 0.2s; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <i class="fa-solid fa-house"></i> 公式サイト
+          </a>
+
+          <a href="https://www.instagram.com/sunaoretreat/" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 8px; width: 45%; min-width: 140px; background: #e1306c; color: #fff; text-decoration: none; font-size: 13px; font-family: var(--font-noto); letter-spacing: 0.1em; padding: 12px 10px; border-radius: 4px; transition: opacity 0.2s; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <i class="fa-brands fa-instagram"></i> Instagram
+          </a>
+
+          <a href="https://www.youtube.com/@sunaoretreat%E5%A5%A5%E7%99%BD%E6%B5%9C" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 8px; width: 45%; min-width: 140px; background: #ff0000; color: #fff; text-decoration: none; font-size: 13px; font-family: var(--font-noto); letter-spacing: 0.1em; padding: 12px 10px; border-radius: 4px; transition: opacity 0.2s; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <i class="fa-brands fa-youtube"></i> YouTube
+          </a>
+
+          <a href="https://www.tiktok.com/@sunao.retreat?is_from_webapp=1&sender_device=pc" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 8px; width: 45%; min-width: 140px; background: #000000; color: #fff; text-decoration: none; font-size: 13px; font-family: var(--font-noto); letter-spacing: 0.1em; padding: 12px 10px; border-radius: 4px; transition: opacity 0.2s; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <i class="fa-brands fa-tiktok"></i> TikTok
+          </a>
+
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<div class="sep"></div>
-
-<!-- TIMETABLE -->
-<section id="timetable">
-  <div class="fade-in">
-    <p class="section-en">Time Table</p>
-    <h2 class="section-title">タイムテーブル</h2>
-    <div class="divider"><div class="divider-line"></div><div class="divider-diamond"></div><div class="divider-line"></div></div>
-    <div class="timetable">
- <div class="timetable">
-  <div class="tt-header" style="font-family: 'Noto Serif JP', sans-serif;">2026.6.14 SUN</div>
-  <div style="padding: 3rem 1.5rem; text-align: center; background: var(--cream);">
-    <div style="font-family: var(--font-noto); font-size: 32px; font-weight: 300; letter-spacing: 0.3em; color: var(--red); margin-bottom: 12px;">Coming Soon</div>
-    <div style="font-family: var(--font-noto); font-size: 13px; color: var(--brown-light); letter-spacing: 0.15em; line-height: 2;">
-      タイムテーブルは決定次第、公開予定です。<br>
-      続報をお待ちください。
+  <footer>
+    <div class="footer-title">白浜×台湾フェス 2026</div>
+    <div class="footer-zh">南房總白濱台灣祭</div>
+    <div style="font-size:12px; color:#faf0e066; letter-spacing:0.15em; line-height:2;">
+      2026年6月14日（日）<br> 
+      SUNAO Retreat 奥白浜・千葉県南房総市<br>
+      （入場無料）
     </div>
-  </div>
-</div>
-  </div>
-</section>
+    <div class="footer-credit">主催：白浜×台湾フェス実行委員会</div>
+  </footer>
 
-<div class="sep"></div>
+  <script>
+    // Hero image: use uploaded photo
+    document.querySelector('.hero-img').style.backgroundImage = "url('top.jpg')";
 
-<!-- FOOD -->
-<section id="food">
-  <div class="fade-in">
-    <p class="section-en">Food & Drink</p>
-    <h2 class="section-title">台湾小吃</h2>
-    <div class="divider"><div class="divider-line"></div><div class="divider-diamond"></div><div class="divider-line"></div></div>
-    <div class="food-note">
-      🌿 南房総の食材を活用した、本格的な台湾グルメ提供予定。<br/>メニューは順次更新予定です。
-    </div>
-  </div>
-</section>
+    // Scroll fade-in
+    const faders = document.querySelectorAll('.fade-in');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.1 });
+    faders.forEach(f => io.observe(f));
+  </script>
 
-<div class="sep"></div>
-
-<!-- TIP -->
-<section id="tip">
-  <div class="fade-in">
-    <p class="section-en">Tip for the Band</p>
-    <h2 class="section-title">投げ銭について</h2>
-    <div class="divider"><div class="divider-line"></div><div class="divider-diamond"></div><div class="divider-line"></div></div>
-    <div class="tip-box">
-      <div class="tip-header">応援のギフト — Tip for the Band</div>
-      <div class="tip-body">
-        <p>このイベントは<strong>入場無料</strong>です。<br/>もし音楽が心に響いたら、アーティストへの「応援のギフト」として投げ銭（チップ）をいただけると幸いです。</p>
-        <span style="font-size: 12px; color: var(--brown-light); margin-top: 6px; display: block;">※いただいた投げ銭は、アーティストへ全額お渡しします。</span>
-  </div>
-</section>
-
-<div class="sep"></div>
-
-<!-- ACCESS -->
-<section id="access">
-  <div class="fade-in">
-    <p class="section-en">Access</p>
-    <h2 class="section-title">アクセス・地図</h2>
-    <div class="divider"><div class="divider-line"></div><div class="divider-diamond"></div><div class="divider-line"></div></div>
-    <div class="access-grid">
-  <div style="margin-bottom: 1rem;">
-  <div class="access-item">
-    <div class="access-label">Venue</div>
-    <div class="access-value">
-      <strong>SUNAO Retreat 奥白浜</strong><br>
-      〒295-0102 千葉県南房総市白浜町白浜9088-1<br>
-      <span style="font-size: 12px; color: var(--brown-light); margin-top: 6px; display: block;">※ 館山道・富浦ICより約30分 / 駐車場あり</span>
-</div>
-      </div>
-    </div>
-    <div style="border-radius:4px; overflow:hidden; border: 0.5px solid #c8941033;"> <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3271.3408686388084!2d139.8864701!3d34.9229872!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6017e54c215179ff%3A0x812d0623f690f6e0!2z44K544OK44Kq44Oq44OI44Oq44O844OI5aWl55m95rWcLeeZvea1nOixhuiFkOW3peaIvw!5e0!3m2!1sja!2sjp!4v1778132781435!5m2!1sja!2sjp" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <div style="text-align:center; padding: 10px;"> <a class="map-btn" href="https://maps.app.goo.gl/qaBWfeG2JVYo3fq7A" target="_blank">Google マップで開く</a> </div> </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <div class="footer-title">白浜×台湾フェス 2026</div>
-  <div class="footer-zh">南房總白濱台灣祭</div>
-  <div style="font-size:12px; color:#faf0e066; letter-spacing:0.15em; line-height:2;">
-    2026年6月14日（日）<br>
-    SUNAO Retreat 奥白浜・千葉県南房総市<br>
-    （入場無料）
-  </div>
-  <div class="footer-credit">主催：白浜×台湾フェス実行委員会</div>
-</footer>
-
-<script>
-  // Hero image: use uploaded photo
-  document.querySelector('.hero-img').style.backgroundImage = "url('top.jpg')";
-
-  // Scroll fade-in
-  const faders = document.querySelectorAll('.fade-in');
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
-    });
-  }, { threshold: 0.1 });
-  faders.forEach(f => io.observe(f));
-</script>
-<!-- TOPへ戻るボタン -->
-<button id="toTop" onclick="window.scrollTo({top:0, behavior:'smooth'})" style="
+  <button id="toTop" onclick="window.scrollTo({top:0, behavior:'smooth'})" style="
   position: fixed;
   bottom: 28px;
   right: 24px;
@@ -819,21 +1061,21 @@
   z-index: 200;
   transition: opacity 0.3s;
 ">
-  <svg width="20" height="14" viewBox="0 0 20 14" fill="none">
-    <path d="M2 12L10 3L18 12" stroke="#faf0e0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-  </svg>
-  <span style="font-size: 10px; font-weight: 600; letter-spacing: 0.1em; line-height: 1;"><br/>TOP</span>
-</button>
+    <svg width="20" height="14" viewBox="0 0 20 14" fill="none">
+      <path d="M2 12L10 3L18 12" stroke="#faf0e0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+    <span style="font-size: 10px; font-weight: 600; letter-spacing: 0.1em; line-height: 1;"><br />TOP</span>
+  </button>
 
-<script>
-  const toTop = document.getElementById('toTop');
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 400) {
-      toTop.style.display = 'flex';
-    } else {
-      toTop.style.display = 'none';
-    }
-  });
-</script>
+  <script>
+    const toTop = document.getElementById('toTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 400) {
+        toTop.style.display = 'flex';
+      } else {
+        toTop.style.display = 'none';
+      }
+    });
+  </script>
 </body>
 </html>
