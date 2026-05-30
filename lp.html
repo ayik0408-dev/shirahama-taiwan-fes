@@ -58,18 +58,26 @@
       padding: 12px 1rem;
     }
 
-    nav a {
-      color: #faf0e0cc;
+nav a {
+      color: #faf0e0; /* 少し文字を明るくして読みやすく */
       text-decoration: none;
       font-family: var(--font-noto);
       font-size: 13px;
-      letter-spacing: 0.1em;
-      transition: color 0.2s;
+      letter-spacing: 0.05em; /* ボタン化にあわせて字幅を微調整 */
+      transition: all 0.2s;
       white-space: nowrap;
+      
+      /* ▼ ボタンっぽく見せるための追加コード ▼ */
+      padding: 6px 14px; /* 文字の周りに指で押しやすい余白を作る */
+      border: 1px solid #faf0e055; /* 薄い枠線をつける */
+      border-radius: 20px; /* 角を丸くして優しい印象にする */
+      background: rgba(250, 240, 224, 0.05); /* うっすら背景色をつける */
     }
 
-    nav a:hover {
+    nav a:hover, nav a:active {
       color: #fff;
+      background: rgba(250, 240, 224, 0.2); /* タッチした時にフワッと明るくする */
+      border-color: #faf0e0aa;
     }
 
     /* ── HERO ── */
