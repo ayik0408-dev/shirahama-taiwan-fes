@@ -41,6 +41,7 @@
       font-family: var(--font-noto);
       line-height: 1.8;
       overflow-x: hidden;
+      -webkit-text-size-adjust: 100%;
     }
 
     /* ── NAV ── */
@@ -575,7 +576,7 @@
       <div class="hero-date">6.14<sup>SUN</sup></div>
       <div class="hero-year">2026</div>
       
-      <div style="font-family: var(--font-en); font-size: 14px; letter-spacing: 0.15em; color: #e8b840; border: 0.5px solid #e8b84088; padding: 4px 16px; border-radius: 20px; margin-top: 4px;">
+      <div style="font-family: var(--font-en); font-size: 14px; letter-spacing: 0.1em; color: #e8b840; border: 1.5px solid #e8b84088; padding: 4px 16px; border-radius: 20px; margin-top: 4px;">
         OPEN 12:00
       </div>
 
@@ -596,11 +597,6 @@
     <div class="fade-in">
       <p class="section-en">Event Overview</p>
       <h2 class="section-title">イベント概要</h2>
-      <div class="divider">
-        <div class="divider-line"></div>
-        <div class="divider-diamond"></div>
-        <div class="divider-line"></div>
-      </div>
       
       <div class="overview-grid">
         <div class="overview-item" style="text-align:center;">
@@ -641,11 +637,6 @@
     <div class="fade-in">
       <p class="section-en">Artists</p>
       <h2 class="section-title">アーティスト紹介</h2>
-      <div class="divider">
-        <div class="divider-line"></div>
-        <div class="divider-diamond"></div>
-        <div class="divider-line"></div>
-      </div>
       <div class="artist-cards">
         <div class="artist-card">
           <div class="artist-bar"></div>
@@ -702,11 +693,6 @@
     <div class="fade-in">
       <p class="section-en">Time Table</p>
       <h2 class="section-title">タイムテーブル</h2>
-      <div class="divider">
-        <div class="divider-line"></div>
-        <div class="divider-diamond"></div>
-        <div class="divider-line"></div>
-      </div>
       <div class="timetable">
         <div class="tt-header" style="font-family: var(--font-noto);">2026.6.14 SUN</div>
         <div style="padding: 3rem 1.5rem; text-align: center; background: var(--cream);">
@@ -812,24 +798,17 @@
     <div class="fade-in">
       <p class="section-en">Market & Relaxation</p>
       <h2 class="section-title">出展ブース</h2>
-      <div class="divider">
-        <div class="divider-line"></div>
-        <div class="divider-diamond"></div>
-        <div class="divider-line"></div>
-      </div>
-
       <div class="artist-cards">
         
         <div class="artist-card">
           <div class="artist-bar" style="background: var(--gold);"></div>
           <div class="artist-body" style="text-align: center;">
 <!-- 📷 5枚の横スクロール写真ギャラリー（スナップ位置を左端に調整） -->
-           <div style="display: flex; gap: 8px; overflow-x: auto; padding-bottom: 12px; margin-bottom: 1rem; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;">
+           <div style="display: flex; gap: 8px; overflow-x: auto; padding-bottom: 8px; margin-bottom: 0.5rem; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;">
              <img src="tounky1.jpg" alt="作品写真1" style="height: 150px; width: auto; flex-shrink: 0; border-radius: 4px; scroll-snap-align: start;">
              <img src="tounky2.jpg" alt="作品写真2" style="height: 150px; width: auto; flex-shrink: 0; border-radius: 4px; scroll-snap-align: start;">
              <img src="tounky3.jpg" alt="作品写真3" style="height: 150px; width: auto; flex-shrink: 0; border-radius: 4px; scroll-snap-align: start;">
              <img src="tounky4.jpg" alt="作品写真4" style="height: 150px; width: auto; flex-shrink: 0; border-radius: 4px; scroll-snap-align: start;">
-             <img src="tounky5.jpg" alt="作品写真5" style="height: 150px; width: auto; flex-shrink: 0; border-radius: 4px; scroll-snap-align: start;">
              
              <!-- ▼ 最後の画像が右端にペタッとくっつかないようにするための透明なスキマ -->
              <div style="width: 1px; flex-shrink: 0;"></div>
@@ -909,7 +888,7 @@
             
             <div class="artist-desc" style="text-align: left; margin-top: 1rem;">
               台湾の知る人ぞ知る丁寧な手仕事。日常にそっと彩りを添える、一点もののハンドメイド雑貨。<br><br>
-              どこか懐かしく、そして温かみのある空気感をそのまま形にしたような、特別なハンドメイドブースです。手掛けるのは、台湾人作家の「Lily」。<br><br>
+              どこか懐かしく、そして温かみのある空気感をそのまま形にしたような、特別なハンドメイドです。<br>手掛けるのは、台湾人作家の「Lily」。<br><br>
               台湾の伝統的なエッセンスを取り入れながら、現代のライフスタイルにも優しく馴染む、お洒落なポーチやぬくもり溢れる編み物小物をひとつひとつ丁寧に仕立てました。<br><br>
               大量生産にはない、手仕事ならではの繊細なディテールと、台湾の色彩感覚が光るデザインは、まさに「知る人ぞ知る」特別な逸品。大切な人へのギフトや、自分へのとっておきのご褒美にぴったりです。<br>
               世界にひとつだけの、あなただけのお気に入りと出会えますように。
@@ -925,11 +904,6 @@
     <div class="fade-in">
       <p class="section-en">Tip for the Band</p>
       <h2 class="section-title">投げ銭について</h2>
-      <div class="divider">
-        <div class="divider-line"></div>
-        <div class="divider-diamond"></div>
-        <div class="divider-line"></div>
-      </div>
       <div class="tip-box">
         <div class="tip-header">応援のギフト — Tip for the Band</div>
         <div class="tip-body">
@@ -947,11 +921,6 @@
     <div class="fade-in">
       <p class="section-en">Access</p>
       <h2 class="section-title">アクセス・地図</h2>
-      <div class="divider">
-        <div class="divider-line"></div>
-        <div class="divider-diamond"></div>
-        <div class="divider-line"></div>
-      </div>
       <div class="access-grid">
         <div style="margin-bottom: 1rem;">
           <div class="access-item">
@@ -980,11 +949,6 @@
     <div class="fade-in">
       <p class="section-en">Official Info</p>
       <h2 class="section-title">主催・公式SNS</h2>
-      <div class="divider">
-        <div class="divider-line"></div>
-        <div class="divider-diamond"></div>
-        <div class="divider-line"></div>
-      </div>
       
       <div style="text-align: center; padding: 1rem 0;">
         <p style="font-size: 13px; color: var(--brown); line-height: 2; margin-bottom: 1.5rem;">
