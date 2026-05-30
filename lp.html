@@ -39,7 +39,7 @@
       background: var(--cream);
       color: var(--brown);
       font-family: var(--font-noto);
-      line-height: 1.8;
+      line-height: 2;
       overflow-x: hidden;
       -webkit-text-size-adjust: 100%;
     }
@@ -215,13 +215,13 @@ nav a {
       flex-wrap: wrap;
     }
 
-    .tag {
-      background: var(--red);
+.tag {
+      background: rgba(250, 240, 224, 0.15); /* 赤のベタ塗りをやめ、うっすら半透明に */
       color: #faf0e0;
       font-family: var(--font-noto);
-      font-size: 12px;
-      padding: 6px 16px;
-      border-radius: 24px;
+      font-size: 11px; /* 少しだけ文字を小さくして控えめに */
+      padding: 4px 12px; /* 上下の余白を減らして「ボタンの厚み」を無くす */
+      border-radius: 4px;
       letter-spacing: 0.1em;
     }
 
