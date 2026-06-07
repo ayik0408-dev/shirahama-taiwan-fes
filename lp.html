@@ -58,25 +58,23 @@
       padding: 12px 1rem;
     }
 
-nav a {
-      color: #faf0e0; /* 少し文字を明るくして読みやすく */
+    nav a {
+      color: #faf0e0;
       text-decoration: none;
       font-family: var(--font-noto);
       font-size: 13px;
-      letter-spacing: 0.05em; /* ボタン化にあわせて字幅を微調整 */
+      letter-spacing: 0.05em;
       transition: all 0.2s;
       white-space: nowrap;
-      
-      /* ▼ ボタンっぽく見せるための追加コード ▼ */
-      padding: 6px 14px; /* 文字の周りに指で押しやすい余白を作る */
-      border: 1px solid #faf0e055; /* 薄い枠線をつける */
-      border-radius: 20px; /* 角を丸くして優しい印象にする */
-      background: rgba(250, 240, 224, 0.05); /* うっすら背景色をつける */
+      padding: 6px 14px;
+      border: 1px solid #faf0e055;
+      border-radius: 20px;
+      background: rgba(250, 240, 224, 0.05);
     }
 
     nav a:hover, nav a:active {
       color: #fff;
-      background: rgba(250, 240, 224, 0.2); /* タッチした時にフワッと明るくする */
+      background: rgba(250, 240, 224, 0.2);
       border-color: #faf0e0aa;
     }
 
@@ -215,12 +213,12 @@ nav a {
       flex-wrap: wrap;
     }
 
-.tag {
-      background: rgba(250, 240, 224, 0.15); /* 赤のベタ塗りをやめ、うっすら半透明に */
+    .tag {
+      background: rgba(250, 240, 224, 0.15);
       color: #faf0e0;
       font-family: var(--font-noto);
-      font-size: 11px; /* 少しだけ文字を小さくして控えめに */
-      padding: 4px 12px; /* 上下の余白を減らして「ボタンの厚み」を無くす */
+      font-size: 11px;
+      padding: 4px 12px;
       border-radius: 4px;
       letter-spacing: 0.1em;
     }
@@ -647,6 +645,29 @@ nav a {
       <p class="section-en">Artists</p>
       <h2 class="section-title">アーティスト紹介</h2>
       <div class="artist-cards">
+
+        <div class="artist-card">
+          <div class="artist-bar" style="background: var(--gold);"></div>
+          <div class="artist-body" style="text-align: center;">
+            <img src="oaa.png" alt="小林徹也とタガワサトル" style="width: 100%; max-width: 400px; height: auto; object-fit: cover; border-radius: 8px; margin-bottom: 1rem; display: block; margin-left: auto; margin-right: auto;">
+            <div class="artist-name">小林徹也とタガワサトル</div>
+            <div class="artist-role" style="font-family: var(--font-en); letter-spacing: 0.15em;">Opening Act</div>
+            <div class="artist-desc" style="text-align: left; margin-top: 1.5rem;">
+              <strong style="color: var(--brown); display: block; margin-bottom: 1.2rem; line-height: 1.8; text-align: center;">
+                初夏の里山に響き渡る、<br>ギターとチェロの温かなハーモニー。
+              </strong>
+              フェスの幕開けを飾るオープニングアクトとして、アコースティックギターとチェロによるデュオが登場！<br><br>
+              ギターボーカルを務める小林徹也の優しく包み込むような歌声と、タガワサトルが奏でる深みのあるチェロの音色が心地よく交差します。<br><br>
+              野外の開放的な空気にぴったりな、温もりあふれるアコースティック・サウンドで、ゆったりとしたフェスの始まりをお楽しみください。
+            </div>
+            <div class="artist-tags" style="text-align: center; justify-content: center; margin-top: 1rem;">
+              <span class="artist-tag">#オープニングアクト</span>
+              <span class="artist-tag">#アコースティック</span>
+              <span class="artist-tag">#チェロとギター</span>
+            </div>
+          </div>
+        </div>
+
         <div class="artist-card">
           <div class="artist-bar"></div>
           <div class="artist-body" style="text-align: center;">
@@ -737,7 +758,7 @@ nav a {
         <div style="margin-bottom: 1.5rem;">
           <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 2px;">
             <span style="font-size: 18px;">🍛</span>
-            <ruby>特製魯肉飯<rt style="font-size: 9px; color: var(--red-light); letter-spacing: 0;">　　　　ルーローハン</rt></ruby>
+            <ruby>特製魯肉飯<rt style="font-size: 9px; color: var(--red-light); letter-spacing: 0;">    ルーローハン</rt></ruby>
           </div>
           <div style="font-family: var(--font-en); font-size: 11px; color: var(--brown-light); margin-left: 30px; margin-bottom: 4px;">Minamiboso Gibier Minced Pork Rice</div>
           <div style="font-size: 12px; color: var(--brown-light); line-height: 1.8; margin-left: 30px;">地元・南房総のジビエ肉をじっくり煮込んだ、旨味たっぷりの特製ルーローハンです。</div>
@@ -746,13 +767,13 @@ nav a {
         <div style="margin-bottom: 1.5rem;">
           <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 2px;">
             <span style="font-size: 18px;">🥣</span>
-            <ruby>白浜豆花<rt style="font-size: 9px; color: var(--red-light); letter-spacing: 0;">　　　　トウファ</rt></ruby>
+            <ruby>白浜豆花<rt style="font-size: 9px; color: var(--red-light); letter-spacing: 0;">    トウファ</rt></ruby>
           </div>
           <div style="font-family: var(--font-en); font-size: 11px; color: var(--brown-light); margin-left: 30px; margin-bottom: 4px;">Shirahama Douhua (Tofu Pudding)</div>
           <div style="font-size: 12px; color: var(--brown-light); line-height: 1.8; margin-left: 30px;">つるんとした優しい口当たりの豆乳デザート。ほのかな甘みのシロップでお召し上がりください。</div>
         </div>
 
- <div style="margin-bottom: 1.5rem;">
+        <div style="margin-bottom: 1.5rem;">
           <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 2px;">
             <span style="font-size: 18px;">🫓</span>
             <span style="font-family: var(--font-min); font-size: 16px; color: var(--red); letter-spacing: 0.05em;">
@@ -763,7 +784,7 @@ nav a {
           <div style="font-size: 13px; color: var(--brown-light); line-height: 1.8; margin-left: 30px;">外はサクサク、中はモチモチ。ネギの香ばしさがたまらない台湾定番のスナックです。</div>
         </div>
 
-<div style="margin-bottom: 2.5rem;">
+        <div style="margin-bottom: 2.5rem;">
           <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 2px;">
             <span style="font-size: 18px;">🥚</span>
             <span style="font-family: var(--font-min); font-size: 16px; color: var(--red); letter-spacing: 0.05em;">
@@ -816,14 +837,12 @@ nav a {
         <div class="artist-card">
           <div class="artist-bar" style="background: var(--gold);"></div>
           <div class="artist-body" style="text-align: center;">
-<!-- 📷 5枚の横スクロール写真ギャラリー（スナップ位置を左端に調整） -->
            <div style="display: flex; gap: 8px; overflow-x: auto; padding-bottom: 8px; margin-bottom: 0.5rem; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;">
              <img src="tounky1.jpg" alt="作品写真1" style="height: 150px; width: auto; flex-shrink: 0; border-radius: 4px; scroll-snap-align: start;">
              <img src="tounky2.jpg" alt="作品写真2" style="height: 150px; width: auto; flex-shrink: 0; border-radius: 4px; scroll-snap-align: start;">
              <img src="tounky3.jpg" alt="作品写真3" style="height: 150px; width: auto; flex-shrink: 0; border-radius: 4px; scroll-snap-align: start;">
              <img src="tounky4.jpg" alt="作品写真4" style="height: 150px; width: auto; flex-shrink: 0; border-radius: 4px; scroll-snap-align: start;">
 
-<!-- ▼ 最後の画像が右端にペタッとくっつかないようにするための透明なスキマ -->
              <div style="width: 1px; flex-shrink: 0;"></div>
             </div>
             <div style="font-size: 11px; color: var(--brown-light); text-align: right; margin-top: -4px; margin-bottom: 12px; letter-spacing: 0.1em; opacity: 0.8;">
