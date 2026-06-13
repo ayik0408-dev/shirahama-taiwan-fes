@@ -376,6 +376,56 @@
       font-family: var(--font-en);
     }
 
+    .tt-row {
+      display: grid;
+      grid-template-columns: 80px 1fr;
+      border-bottom: 0.5px solid #c8941022;
+      background: var(--cream);
+    }
+
+    .tt-row:last-child {
+      border-bottom: none;
+    }
+
+    /* ライブの行だけ少し背景色を変えて目立たせる */
+    .tt-row.session {
+      background: rgba(200, 148, 16, 0.05); 
+    }
+
+    .tt-time {
+      padding: 14px 10px;
+      font-family: var(--font-en);
+      font-size: 14px;
+      letter-spacing: 0.05em;
+      color: var(--red);
+      border-right: 0.5px solid #c8941022;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .tt-content {
+      padding: 14px 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .tt-act {
+      font-family: var(--font-min);
+      font-size: 15px;
+      color: var(--brown);
+      letter-spacing: 0.05em;
+      line-height: 1.4;
+    }
+
+    .tt-note {
+      font-size: 12px;
+      color: var(--brown-light);
+      letter-spacing: 0.05em;
+      margin-top: 2px;
+    }
+
     /* ── FOOD / TIP / ACCESS / FOOTER のデザイン復旧 ── */
     .food-note {
       margin-top: 1.5rem;
@@ -628,13 +678,6 @@
         日本や台湾で愛され続ける名曲から西洋ジャズまで ——<br>
         里山に響く生演奏をお届けします。
       </p>
-
-      <div style="margin-top: 1.5rem; padding: 1rem 1.2rem; background: #e8b84011; border: 0.5px solid #c8941033; border-radius: 4px; text-align: center;">
-        <span style="font-size: 13px; color: var(--red); letter-spacing: 0.1em; display: inline-block; margin-bottom: 4px;">☔️ 雨天時のご案内</span><br>
-        <span style="font-size: 12px; color: var(--brown-light); letter-spacing: 0.05em; line-height: 1.8;">
-          雨天時の開催状況につきましては、本ホームページおよび公式SNSにてお知らせいたします。
-        </span>
-      </div>
     </div>
   </section>
 
@@ -651,7 +694,7 @@
           <div class="artist-body" style="text-align: center;">
             <img src="oaa.png" alt="小林徹也とタガワサトル" style="width: 100%; max-width: 400px; height: auto; object-fit: cover; border-radius: 8px; margin-bottom: 1rem; display: block; margin-left: auto; margin-right: auto;">
             <div class="artist-name">小林徹也とタガワサトル</div>
-            <div class="artist-role" style="font-family: var(--font-en); letter-spacing: 0.15em;">Opening Act</div>
+            <div class="artist-role" style="font-family: var(--font-en); letter-spacing: 0.15em;">Opening Act / Acoustic Duo</div>
             <div class="artist-desc" style="text-align: left; margin-top: 1.5rem;">
               <strong style="color: var(--brown); display: block; margin-bottom: 1.2rem; line-height: 1.8; text-align: center;">
                 初夏の里山に響き渡る、<br>ギターとチェロの温かなハーモニー。
@@ -660,7 +703,7 @@
               ギターボーカルを務める小林徹也の優しく包み込むような歌声と、タガワサトルが奏でる深みのあるチェロの音色が心地よく交差します。<br><br>
               野外の開放的な空気にぴったりな、温もりあふれるアコースティック・サウンドで、ゆったりとしたフェスの始まりをお楽しみください。
             </div>
-            <div class="artist-tags" style="text-align: center; justify-content: center; margin-top: 1rem;">
+            <div class="artist-tags" style="text-align: center; justify-content: center; margin-top: 1.5rem;">
               <span class="artist-tag">#オープニングアクト</span>
               <span class="artist-tag">#アコースティック</span>
               <span class="artist-tag">#チェロとギター</span>
@@ -723,19 +766,61 @@
     <div class="fade-in">
       <p class="section-en">Time Table</p>
       <h2 class="section-title">タイムテーブル</h2>
+      
       <div class="timetable">
-        <div class="tt-header" style="font-family: var(--font-noto);">2026.6.14 SUN</div>
-        <div style="padding: 3rem 1.5rem; text-align: center; background: var(--cream);">
-          <div
-            style="font-family: var(--font-noto); font-size: 32px; font-weight: 300; letter-spacing: 0.3em; color: var(--red); margin-bottom: 12px;">
-            Coming Soon</div>
-          <div
-            style="font-family: var(--font-noto); font-size: 13px; color: var(--brown-light); letter-spacing: 0.15em; line-height: 2;">
-            タイムテーブルは決定次第、公開予定です。<br>
-            続報をお待ちください。
+        <div class="tt-header" style="font-family: var(--font-en);">2026.6.14 SUN</div>
+        
+        <div class="tt-row">
+          <div class="tt-time">12:00</div>
+          <div class="tt-content">
+            <div class="tt-act">Open</div>
+          </div>
+        </div>
+        
+        <div class="tt-row">
+          <div class="tt-time">13:00</div>
+          <div class="tt-content">
+            <div class="tt-act">オープニングアクト</div>
+            <div class="tt-note">小林徹也とタガワサトル</div>
+          </div>
+        </div>
+        
+        <div class="tt-row session">
+          <div class="tt-time">14:00</div>
+          <div class="tt-content">
+            <div class="tt-act">1st Live</div>
+            <div class="tt-note">畢(Be) My Friends</div>
+          </div>
+        </div>
+        
+        <div class="tt-row session">
+          <div class="tt-time">15:30</div>
+          <div class="tt-content">
+            <div class="tt-act">2nd Live</div>
+            <div class="tt-note">畢(Be) My Friends</div>
+          </div>
+        </div>
+        
+        <div class="tt-row session">
+          <div class="tt-time">17:00</div>
+          <div class="tt-content">
+            <div class="tt-act">3rd Live</div>
+            <div class="tt-note">畢(Be) My Friends</div>
+          </div>
+        </div>
+        
+        <div class="tt-row">
+          <div class="tt-time">17:30</div>
+          <div class="tt-content">
+            <div class="tt-act">After Party & 交流會</div>
           </div>
         </div>
       </div>
+
+      <p style="font-size: 11px; color: var(--brown-light); margin-top: 12px; text-align: right;">
+        ※当日の進行や状況により、スケジュールが変更になる場合がございます。
+      </p>
+      
     </div>
   </section>
 
